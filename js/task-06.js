@@ -11,8 +11,26 @@ function onValidInput(event) {
     if (event.currentTarget.value.length === Number(input.dataset.length)) {
         input.classList.remove("invalid");
         input.classList.add("valid");
-      } else {
+        return
+      }
         input.classList.remove("valid");
         input.classList.add("invalid");
-      }
-};
+      };
+
+
+      ////////////////////////////////////////////////////////////
+
+// function onValidInput(event) {    
+//   input.classList.add(
+//     event.currentTarget.value.length ===
+//     Number(input.dataset.length)
+//     ? "valid"
+//     : "invalid"
+//   );
+//     };
+
+
+
+
+
+
